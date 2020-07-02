@@ -1,0 +1,212 @@
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--                xmlns:tools="http://schemas.android.com/tools"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:gravity="center_horizontal"-->
+<!--                android:paddingBottom="@dimen/activity_vertical_margin"-->
+<!--                android:paddingLeft="@dimen/activity_horizontal_margin"-->
+<!--                android:paddingRight="@dimen/activity_horizontal_margin"-->
+<!--                android:paddingTop="@dimen/activity_vertical_margin">-->
+
+<!--    <android.support.design.widget.TextInputLayout-->
+<!--        android:id="@+id/username_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+<!--        -->
+<!--        -->
+
+<!--        <EditText-->
+<!--            android:id="@+id/username"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/login_username"-->
+<!--            android:maxLines="1"/>-->
+
+<!--    </android.support.design.widget.TextInputLayout>-->
+
+<!--    <android.support.design.widget.TextInputLayout-->
+<!--        android:id="@+id/password_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/username_layout">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/password"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/login_password"-->
+<!--            android:imeActionLabel="@string/action_sign_in_short"-->
+<!--            android:imeOptions="actionUnspecified"-->
+<!--            android:inputType="textPassword"-->
+<!--            android:maxLines="1"/>-->
+
+<!--    </android.support.design.widget.TextInputLayout>-->
+
+<!--    <android.support.design.widget.TextInputLayout-->
+<!--        android:id="@+id/email_layout"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/password_layout">-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/email"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="@string/prompt_email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:maxLines="1"/>-->
+
+<!--    </android.support.design.widget.TextInputLayout>-->
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/email_layout"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <Button-->
+<!--            android:id="@+id/register"-->
+<!--            style="?android:textAppearanceSmall"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/login_register"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/login"-->
+<!--            style="?android:textAppearanceSmall"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_weight="1"-->
+<!--            android:text="@string/login_login"-->
+<!--            android:textStyle="bold"/>-->
+
+<!--    </LinearLayout>-->
+
+<!--</RelativeLayout>-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical"
+        android:background="#FFF">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_login_account"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_assignment_ind_24"
+                />
+            <EditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="账号"
+                android:textColorHighlight="#77000000"
+                android:textColor="#000000"
+                android:maxLines="1"
+                android:background="@null"
+                android:gravity="center_vertical"
+                android:paddingLeft="15dp"
+                android:textSize="15sp"
+                android:textColorHint="#77000000"
+                />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#f5f5f5"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="#FFF"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:id="@+id/img_login_pwd"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_baseline_lock_24"
+                />
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:hint="密码"
+                android:maxLines="1"
+                android:textSize="15sp"
+                android:textColorHighlight="#77000000"
+                android:textColor="#000000"
+                android:background="@null"
+                android:paddingLeft="15sp"
+                android:textColorHint="#77000000"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/login"
+            style="?android:textAppearanceSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/login_login"
+
+            android:textColor="#e3ba97"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="点击注册"
+            android:textColor="#33aa44"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:paddingRight="25dp"
+            android:paddingTop="25dp"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/viewResult"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="160dp"
+        android:paddingTop="15dp"
+        android:textAlignment="viewStart"
+        android:textColor="#e3ba97"
+        android:textSize="18sp" />
+</LinearLayout>

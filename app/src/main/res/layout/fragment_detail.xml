@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/textview_border2"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="今天我读了《黄金时代》，很喜欢。"
+        android:textColor="@drawable/text_color"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="转发"
+            android:textSize="10sp"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:text="评论"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="点赞"
+            android:textSize="10sp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/iv_img"
+        android:layout_width="match_parent"
+        android:background="@drawable/textview_border2"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/hmbb"
+        android:contentDescription="TODO" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="转发"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle" />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:text="评论"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="点赞"
+            android:textSize="10sp"
+            tools:ignore="ButtonStyle" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/textview_border2"
+        android:gravity="center"
+        android:lineSpacingExtra="10dp"
+        android:text="@string/bai"
+        android:textColor="@drawable/text_color"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="转发"
+            android:textSize="10sp"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="60dp"
+            android:layout_centerHorizontal="false"
+            android:layout_centerVertical="false"
+            android:text="评论"
+            android:textSize="10sp" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="点赞"
+            android:textSize="10sp" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

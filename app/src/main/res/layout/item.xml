@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_marginLeft="5dp"
+android:layout_marginRight="5dp"
+android:background="@drawable/textview_border2"
+android:gravity="center"
+android:lineSpacingExtra="10dp"
+android:id="@+id/tv"
+android:text="面向对象小组2"
+android:textColor="@drawable/text_color"
+android:textSize="20sp"
+    android:drawableLeft="@mipmap/snb" android:drawablePadding="12dp"/>
